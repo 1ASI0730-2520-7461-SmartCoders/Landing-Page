@@ -27,32 +27,82 @@
 
   <!--  Navigation -->
 
+
   <nav class="navbar">
-
-
-
-
-
-
-
-
-
-
-    
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="img/logo.png" alt="MoveSys Logo" class="brand-logo-img">
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link">
+                    <span data-lang="en">Start</span>
+                    <span data-lang="es">Inicio</span>
+                </a>
+                <a href="#servicios" class="nav-link">
+                    <span data-lang="en">Services</span>
+                    <span data-lang="es">Servicios</span>
+                </a>
+                <a href="#planes" class="nav-link">
+                    <span data-lang="en">Plans</span>
+                    <span data-lang="es">Planes</span>
+                </a>
+                <a href="#contacto" class="nav-link">
+                    <span data-lang="en">Contact</span>
+                    <span data-lang="es">Contacto</span>
+                </a>
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button id="languageBtn" class="btn-language">
+                            <i class="fas fa-globe"></i>
+                            <span data-lang="en">EN</span>
+                            <span data-lang="es">ES</span>
+                        </button>
+                    </div>
+                    <!-- Login button hidden in CSS -->
+                    <a href="#contacto" class="btn btn-primary">
+                        <span data-lang="en">Sign up</span>
+                        <span data-lang="es">Registrarse</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-
   <!--  Portada -->
- <section id="inicio" class="hero">
-
-
-
-
-
-
-
-
-   
+  
+  <section id="inicio" class="hero">
+        <div class="hero-background">
+            <img src="img/ImagenPrincipal.png" alt="Gestión de transporte MoveSys" class="hero-bg-image" loading="eager">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span data-lang="en">YOUR TRANSPORT UNDER<br><span class="highlight">CONTROL</span>, ALWAYS IN<br>REAL TIME</span>
+                        <span data-lang="es">TU TRANSPORTE BAJO<br><span class="highlight">CONTROL</span>, SIEMPRE EN<br>TIEMPO REAL</span>
+                    </h1>
+                    <p class="hero-description">
+                        <span data-lang="en">An innovative platform that digitalizes, controls and enhances freight transport management.</span>
+                        <span data-lang="es">Una plataforma innovadora que digitaliza, controla y potencia la gestión del transporte de carga.</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#servicios" class="btn btn-outline btn-large">
+                            <span data-lang="en">Learn More</span>
+                            <span data-lang="es">Saber Más</span>
+                        </a>
+                        <a href="#contacto" class="btn btn-primary btn-large">
+                            <span data-lang="en">Contact Us</span>
+                            <span data-lang="es">Contáctanos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -61,56 +111,355 @@
 
 
   <!--  Sobre Nosotros -->
-  <section id="sobre-nosotros" class="about">
-
-
-
-
-    
+<section id="sobre-nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span data-lang="en">ABOUT <span class="highlight">US</span></span>
+                        <span data-lang="es">SOBRE <span class="highlight">NOSOTROS</span></span>
+                    </h2>
+                    <div class="about-description">
+                        <div data-lang="en">
+                            <p>At MoveSys we believe logistics should be more efficient, transparent and simple.</p>
+                            <p>We are a startup focused on transforming freight transport management through technology.</p>
+                            <p>Our intelligent platform allows companies to monitor their operations in real time, optimize costs and guarantee traceability of each delivery.</p>
+                            <p>With MoveSys, we digitize logistics processes and take them to the next level, ensuring more control, efficiency and confidence in every kilometer traveled.</p>
+                        </div>
+                        <div data-lang="es">
+                            <p>En MoveSys creemos que la logística debe ser más eficiente, transparente y sencilla.</p>
+                            <p>Somos una startup enfocada en transformar la gestión del transporte de carga a través de la tecnología.</p>
+                            <p>Nuestra plataforma inteligente permite a las empresas monitorear sus operaciones en tiempo real, optimizar costos y garantizar la trazabilidad de cada entrega.</p>
+                            <p>Con MoveSys, digitalizamos los procesos logísticos y los llevamos al siguiente nivel, asegurando más control, eficiencia y confianza en cada kilómetro recorrido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/sobreNosotrosç.png" alt="Sobre MoveSys" class="about-img" loading="lazy">
+                </div>
+            </div>
+        </div>
     </section>
+
 
 
 
   <!-- Beneficios -->
   <section id="servicios" class="benefits">
-
-
-
-
-
-
-
-
-
-
-
-    
+        <div class="container">
+            <div class="section-header">
+                <h2 class="bene-title">
+                    <span data-lang="en">BENEFITS</span>
+                    <span data-lang="es">BENEFICIOS</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span data-lang="en">Discover how MoveSys transforms your logistics operation</span>
+                    <span data-lang="es">Descubre cómo MoveSys transforma tu operación logística</span>
+                </p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="img/beneficio1.png" alt="Trazabilidad en tiempo real" loading="lazy">
+                    </div>
+                    <div class="benefit-content">
+                        <h3>
+                            <span data-lang="en">Real-time traceability</span>
+                            <span data-lang="es">Trazabilidad en tiempo real</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Monitor your units and deliveries with precise geolocation and photographic evidence in each operation.</span>
+                            <span data-lang="es">Monitorea tus unidades y entregas con geolocalización precisa y evidencia fotográfica en cada operación.</span>
+                        </p>
+                    </div>
+                    <div class="benefit-hover-effect"></div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="img/beneficio2.png" alt="Eficiencia operativa" loading="lazy">
+                    </div>
+                    <div class="benefit-content">
+                        <h3>
+                            <span data-lang="en">Operational efficiency</span>
+                            <span data-lang="es">Eficiencia operativa</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Automate mileage recording, generate performance reports and optimize routes to reduce costs and times.</span>
+                            <span data-lang="es">Automatiza el registro de kilometraje, genera reportes de desempeño y optimiza rutas para reducir costos y tiempos.</span>
+                        </p>
+                    </div>
+                    <div class="benefit-hover-effect"></div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="img/beneficio3.png" alt="Decisiones inteligentes">
+                    </div>
+                    <div class="benefit-content">
+                        <h3>
+                            <span data-lang="en">Smart decisions</span>
+                            <span data-lang="es">Decisiones inteligentes</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Access clear indicators and reports that help you improve planning and guarantee customer satisfaction.</span>
+                            <span data-lang="es">Accede a indicadores y reportes claros que te permiten mejorar la planificación y garantizar la satisfacción del cliente.</span>
+                        </p>
+                    </div>
+                    <div class="benefit-hover-effect"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
   <!--  Características -->
   <section id="caracteristicas" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="carac-title">
+                    <span data-lang="en">FEATURES</span>
+                    <span data-lang="es">CARACTERÍSTICAS</span>
+                </h2>
+                <p class="section-subtitle">
+                    <span data-lang="en">Here I propose three blocks that summarize the key functionalities of MoveSys:</span>
+                    <span data-lang="es">Aquí te propongo tres bloques que resumen las funcionalidades clave de MoveSys:</span>
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/caracteristica1.png" alt="Registro automatizado">
+                    </div>
+                    <div class="feature-content">
+                        <h3>
+                            <span data-lang="en">Automated registration</span>
+                            <span data-lang="es">Registro automatizado</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Intelligent system that automatically captures operation data, eliminates manual work and reduces errors.</span>
+                            <span data-lang="es">Sistema inteligente que captura automáticamente datos de operación, elimina trabajo manual y reduce errores.</span>
+                        </p>
+                        <ul class="feature-list">
+                            <li>
+                                <span data-lang="en">Automatic data capture</span>
+                                <span data-lang="es">Captura automática de datos</span>
+                            </li>
+                            <li>
+                                <span data-lang="en">GPS systems integration</span>
+                                <span data-lang="es">Integración con sistemas GPS</span>
+                            </li>
+                            <li>
+                                <span data-lang="en">95% error reduction</span>
+                                <span data-lang="es">Reducción del 95% en errores</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/caracterisitca2.png" alt="Evidencia en cada entrega">
+                    </div>
+                    <div class="feature-content">
+                        <h3>
+                            <span data-lang="en">Evidence in every delivery</span>
+                            <span data-lang="es">Evidencia en cada entrega</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Complete documentation with photographs, digital signatures and geolocation for each delivery made.</span>
+                            <span data-lang="es">Documentación completa con fotografías, firmas digitales y geolocalización para cada entrega realizada.</span>
+                        </p>
+                        <ul class="feature-list">
+                            <li>
+                                <span data-lang="en">Automatic delivery photos</span>
+                                <span data-lang="es">Fotos automáticas de entrega</span>
+                            </li>
+                            <li>
+                                <span data-lang="en">Verified digital signatures</span>
+                                <span data-lang="es">Firmas digitales verificadas</span>
+                            </li>
+                            <li>
+                                <span data-lang="en">Precise geolocation</span>
+                                <span data-lang="es">Geolocalización precisa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/caracteristica3.png" alt="Geolocalización precisa">
+                    </div>
+                    <div class="feature-content">
+                        <h3>
+                            <span data-lang="en">Precise geolocation</span>
+                            <span data-lang="es">Geolocalización precisa</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Real-time tracking with advanced GPS technology for maximum control and security.</span>
+                            <span data-lang="es">Seguimiento en tiempo real con tecnología GPS avanzada para máximo control y seguridad.</span>
+                        </p>
+                        <ul class="feature-list">
+                            <li>
+                                <span data-lang="en">Real-time GPS tracking</span>
+                                <span data-lang="es">Rastreo GPS en tiempo real</span>
+                            </li>
+                            <li>
+                                <span data-lang="en">Automatic alerts</span>
+                                <span data-lang="es">Alertas automáticas</span>
+                            </li>
+                            <li>
+                                <span data-lang="en">Route history</span>
+                                <span data-lang="es">Histórico de rutas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
 
+  
+  
+  
+  
+  
+  
+  
+ <!-- Pricing -->
+<section id="planes" class="pricing">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span data-lang="en">Choose your Plan</span>
+        <span data-lang="es">Elige tu Plan</span>
+      </h2>
+      <p class="section-subtitle">
+        <span data-lang="en">Find the solution that best suits the needs of your transportation and logistics company.</span>
+        <span data-lang="es">Encuentra la solución que mejor se adapte a las necesidades de tu empresa de transporte y logística.</span>
+      </p>
+    </div>
 
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>
+            <span data-lang="en">Basic</span>
+            <span data-lang="es">Básico</span>
+          </h3>
+          <p class="pricing-description">
+            <span data-lang="en">Ideal for small fleets looking to start digitalizing their operations.</span>
+            <span data-lang="es">Ideal para pequeñas flotas que buscan comenzar a digitalizar sus operaciones.</span>
+          </p>
+        </div>
+        <div class="pricing-price">
+          <span class="amount">PEN 30</span>
+          <span class="currency">/equipment</span>
+        </div>
+        <ul class="pricing-features">
+          <li>
+            <span data-lang="en">Automatic mileage recording</span>
+            <span data-lang="es">Registro de kilometraje automático</span>
+          </li>
+          <li>
+            <span data-lang="en">Photographic evidence on deliveries</span>
+            <span data-lang="es">Evidencia fotográfica en entregas</span>
+          </li>
+          <li>
+            <span data-lang="en">Real-time geolocation</span>
+            <span data-lang="es">Geolocalización en tiempo real</span>
+          </li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline">
+          <span data-lang="en">Select</span>
+          <span data-lang="es">Seleccionar</span>
+        </a>
+      </div>
 
-    
-    </section>
+      <div class="pricing-card featured">
+        <div class="popular-badge">
+          <span data-lang="en">Most Popular</span>
+          <span data-lang="es">Más Popular</span>
+        </div>
+        <div class="pricing-header">
+          <h3>
+            <span data-lang="en">Professional</span>
+            <span data-lang="es">Profesional</span>
+          </h3>
+          <p class="pricing-description">
+            <span data-lang="en">For companies that need greater control and detailed reporting.</span>
+            <span data-lang="es">Para empresas que necesitan mayor control y reportes detallados.</span>
+          </p>
+        </div>
+        <div class="pricing-price">
+          <span class="amount">PEN 70</span>
+          <span class="currency">/equipment</span>
+        </div>
+        <ul class="pricing-features">
+          <li>
+            <span data-lang="en">Everything from Basic Plan</span>
+            <span data-lang="es">Todo lo del Plan Básico</span>
+          </li>
+          <li>
+            <span data-lang="en">Advanced reports and indicators</span>
+            <span data-lang="es">Reportes e indicadores avanzados</span>
+          </li>
+          <li>
+            <span data-lang="en">Priority support</span>
+            <span data-lang="es">Soporte prioritario</span>
+          </li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary">
+          <span data-lang="en">Select</span>
+          <span data-lang="es">Seleccionar</span>
+        </a>
+      </div>
 
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>
+            <span data-lang="en">Corporate</span>
+            <span data-lang="es">Corporativo</span>
+          </h3>
+          <p class="pricing-description">
+            <span data-lang="en">Designed for large fleets and high-volume operations.</span>
+            <span data-lang="es">Diseñado para grandes flotas y operaciones de alto volumen.</span>
+          </p>
+        </div>
+        <div class="pricing-price">
+          <span class="amount">PEN 100</span>
+          <span class="currency">/equipment</span>
+        </div>
+        <ul class="pricing-features">
+          <li>
+            <span data-lang="en">Everything from Professional Plan</span>
+            <span data-lang="es">Todo lo del Plan Profesional</span>
+          </li>
+          <li>
+            <span data-lang="en">Functionality customization</span>
+            <span data-lang="es">Personalización de funcionalidades</span>
+          </li>
+          <li>
+            <span data-lang="en">Advanced analytics panel</span>
+            <span data-lang="es">Panel avanzado de análisis</span>
+          </li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline">
+          <span data-lang="en">Select</span>
+          <span data-lang="es">Seleccionar</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
-  <!-- Pricing -->
-  <section id="planes" class="pricing">
-
-
-    
-    </section>
-
- <!--  Integrantes -->
+<!--  Integrantes -->
 <section id="equipo" class="team">
   <div class="container">
-    
     <div class="section-header">
       <h2 class="section-title">
         <span data-lang="en">Our Team</span>
@@ -123,6 +472,7 @@
     </div>
     
     <div class="team-grid">
+      <!-- Merly -->
       <div class="team-card">
         <div class="team-image">
           <img src="assets/MerlyFoto.png" alt="Merly Salon Puerta">
@@ -143,6 +493,7 @@
         </div>
       </div>
 
+      <!-- Mel Andree -->
       <div class="team-card">
         <div class="team-image">
           <img src="assets/Integrante-Mel-Andree-Orellana.jpeg" alt="Mel Andree Orellana Rodriguez">
@@ -163,6 +514,7 @@
         </div>
       </div>
 
+      <!-- Angel -->
       <div class="team-card">
         <div class="team-image">
           <img src="assets/Integrante_Angel_Berrospi.jpg" alt="Angel Berrospi">
@@ -183,6 +535,7 @@
         </div>
       </div>
 
+      <!-- Bryan -->
       <div class="team-card">
         <div class="team-image">
           <img src="assets/BryanFoto.png" alt="Bryan Felix Martinez">
@@ -203,6 +556,7 @@
         </div>
       </div>
 
+      <!-- Gabriel -->
       <div class="team-card">
         <div class="team-image">
           <img src="assets/Integrante_Gabriel_Espinar.png" alt="Gabriel Ferran Espinar">
@@ -222,7 +576,6 @@
           </p>
         </div>
       </div>
-      
     </div>
   </div>
 </section>
@@ -257,5 +610,4 @@
   <script src="script.js"></script>
 </body>
 </html>
-
 
