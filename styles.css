@@ -35,19 +35,230 @@
 
 
 
-
 /* Integrantes  */
 
+.team {
+    padding: 80px 0;
+    background: white;
+}
 
+.team .section-title {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team .section-subtitle {
+    text-align: center;
+    color: #374151;
+    font-size: 16px;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 350px;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 /* Layout específico - 6 columnas en una fila con intercalado */
 
 /* Tarjeta 1 - Info arriba, foto abajo */
+.team-card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:nth-child(1) .team-info {
+    order: 1;
+    height: 120px;
+}
+
+.team-card:nth-child(1) .team-image {
+    order: 2;
+    flex: 1;
+}
+
+/* Tarjeta 2 - Foto arriba, info abajo */
+.team-card:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:nth-child(2) .team-image {
+    order: 1;
+    height: 220px;
+}
+
+.team-card:nth-child(2) .team-info {
+    order: 2;
+    flex: 1;
+}
 
 /* Tarjeta 3 - Info arriba, foto abajo */
+.team-card:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
 
+.team-card:nth-child(3) .team-info {
+    order: 1;
+    height: 120px;
+}
+
+.team-card:nth-child(3) .team-image {
+    order: 2;
+    flex: 1;
+}
+
+/* Tarjeta 4 - Foto arriba, info abajo */
+.team-card:nth-child(4) {
+    grid-column: 4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:nth-child(4) .team-image {
+    order: 1;
+    height: 220px;
+}
+
+.team-card:nth-child(4) .team-info {
+    order: 2;
+    flex: 1;
+}
 
 /* Tarjeta 5 - Info arriba, foto abajo */
+.team-card:nth-child(5) {
+    grid-column: 5;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:nth-child(5) .team-info {
+    order: 1;
+    height: 120px;
+}
+
+.team-card:nth-child(5) .team-image {
+    order: 2;
+    flex: 1;
+}
+
+/* Tarjeta 6 - Foto arriba, info abajo */
+.team-card:nth-child(6) {
+    grid-column: 6;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:nth-child(6) .team-image {
+    order: 1;
+    height: 220px;
+}
+
+.team-card:nth-child(6) .team-info {
+    order: 2;
+    flex: 1;
+}
+
+.team-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+    position: relative;
+}
+
+.team-card:nth-child(n+7) {
+    display: none;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: #cbd5e1;
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    width: 100%;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.05);
+}
+
+.team-overlay {
+    display: none;
+}
+
+
+
+.team-info {
+    background: white;
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-info h3 {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.team-role {
+    color: #2563eb;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-description {
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 
 /* Contacto  */
@@ -98,3 +309,4 @@
    
     /* TEAM MÓVIL - TIPO STORIES */
    
+
