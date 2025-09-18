@@ -7,6 +7,230 @@
 
 /* Navegación  */
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    padding: 8px 16px;
+    margin: 0 !important;
+}
+
+.navbar.scrolled {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 8px 16px;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+
+.navbar.scrolled .nav-brand {
+    color: #1f2937;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    font-size: 26px;
+}
+
+.navbar.scrolled .nav-link {
+    color: #1f2937;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: #2563eb;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.btn-signup {
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+}
+
+.btn-signup:hover {
+    background: #1d4ed8;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.navbar.scrolled .btn-signup {
+    background: #2563eb;
+    color: white;
+}
+
+.navbar.scrolled .btn-signup:hover {
+    background: #1d4ed8;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .nav-container {
+    height: 55px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 26px;
+    color: #1f2937;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.brand-logo-img {
+    height: 200px;
+    width: auto;
+    max-width: 600px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-link {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.nav-link:hover {
+    color: #2563eb;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.language-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-current {
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.lang-divider {
+    color: rgba(31, 41, 55, 0.5);
+    font-size: 14px;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.btn-lang {
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.btn-lang:hover {
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.navbar.scrolled .lang-current,
+.navbar.scrolled .lang-divider,
+.navbar.scrolled .btn-lang {
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.navbar.scrolled .btn-lang:hover {
+    color: #2563eb;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.btn-login {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.navbar.scrolled .hamburger span {
+    background: #4b5563;
+}
+
+
 /* Portada  */
 
 
@@ -98,3 +322,4 @@
    
     /* TEAM MÓVIL - TIPO STORIES */
    
+
