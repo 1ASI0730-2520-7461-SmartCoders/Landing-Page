@@ -900,7 +900,81 @@ body.lang-es textarea[data-placeholder-es]::placeholder { color: transparent; }
 
 
 
-/* Footer  */
+/* FOOTER */
+.footer {
+  background: #f1f5f9;
+  color: #374151;
+  padding: 60px 0 32px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.footer-brand { flex: 1; max-width: 400px; }
+
+.brand-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.brand-logo .brand-logo-img { height: 80px; width: auto; object-fit: contain; filter: brightness(1.2); }
+
+.footer-brand p {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.newsletter { display: flex; gap: 12px; margin-top: 24px; }
+/* Si no quieres mostrar newsletter aún: */
+/* .newsletter { display: none; } */
+
+.footer-links { display: flex; gap: 32px; }
+.footer-section { min-width: 150px; }
+.footer-section h4 { font-weight: 600; margin-bottom: 16px; color: #1f2937; font-size: 16px; }
+.footer-section a { display: block; color: #6b7280; text-decoration: none; margin-bottom: 8px; transition: color .3s; font-size: 14px; }
+.footer-section a:hover { color: #2563eb; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 32px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-bottom p { color: #6b7280; font-size: 14px; margin: 0; }
+
+.social-links { display: flex; gap: 12px; }
+.social-links a {
+  display: grid;
+  place-items: center;
+  width: 36px; height: 36px;
+  background: #2563eb; color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+  font-size: 16px;
+}
+.social-links a:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+@media (max-width: 768px) {
+  .footer-content { flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; }
+}
+
 
 
 
