@@ -1153,3 +1153,112 @@ function initLanguageSystem() {
         languageBtn.addEventListener('click', switchLanguage);
     }
 }
+
+// ================================
+// CARRUSEL DE PROMOCIONES
+// ================================
+
+function initPromotionsCarousel() {
+    const slides = document.querySelectorAll('.promotion-slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    if (!slides.length || !prevBtn || !nextBtn) return;
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    
+    // Función para mostrar una slide específica
+    function showSlide(index) {
+        console.log('Mostrando slide:', index, 'Total slides:', slides.length);
+        
+        // Ocultar todas las slides
+        slides.forEach((slide, i) => {
+            slide.style.display = 'none';
+            slide.classList.remove('active');
+            console.log('Slide', i, 'oculta');
+        });
+        
+        // Mostrar la slide actual
+        if (slides[index]) {
+            slides[index].style.display = 'flex';
+            slides[index].classList.add('active');
+            console.log('Slide', index, 'mostrada');
+        }
+        
+        // Actualizar indicadores
+        indicators.forEach((indicator, i) => {
+            indicator.classList.remove('active');
+            if (i === index) {
+                indicator.classList.add('active');
+            }
+        });
+        
+        currentSlide = index;
+    }
+    
+    // Función para ir a la siguiente slide
+    function nextSlide() {
+        const nextIndex = (currentSlide + 1) % totalSlides;
+        showSlide(nextIndex);
+    }
+    
+    // Función para ir a la slide anterior
+    function prevSlide() {
+        const prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(prevIndex);
+    }
+    
+    // Event listeners para los botones
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    // Event listeners para los indicadores
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            showSlide(index);
+        });
+    });
+    
+    // Auto-play del carrusel (opcional)
+    let autoPlayInterval;
+    
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+    
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+    
+    // Iniciar auto-play
+    startAutoPlay();
+    
+    // Pausar auto-play al pasar el mouse
+    const carouselContainer = document.querySelector('.carousel-container');
+    if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+        carouselContainer.addEventListener('mouseleave', startAutoPlay);
+    }
+    
+    // Pausar auto-play al hacer scroll
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        stopAutoPlay();
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(startAutoPlay, 2000);
+    });
+    
+    // Navegación con teclado
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+        }
+    });
+    
+    // Inicializar con la primera slide
+    showSlide(0);
+}
