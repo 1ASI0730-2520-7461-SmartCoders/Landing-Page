@@ -1,5 +1,3 @@
-
-
 /* ===================================
    ESTILOS
    =================================== */
@@ -1663,8 +1661,150 @@ body.lang-es textarea[data-placeholder-es]::placeholder { color: transparent; }
     }
 }
 
+/* About the Team Video Section */
+.about-team-video {
+    padding: 80px 0;
+    background: #f8fafc;
+}
 
-   
+.about-team-video .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
 
+.about-team-video .section-title {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 16px;
+}
 
+.about-team-video .section-subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-team-video .highlight {
+    color: #2563eb;
+}
+
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive styles for video section */
+@media (max-width: 768px) {
+    .about-team-video {
+        padding: 60px 0;
+    }
+    
+    .about-team-video .section-title {
+        font-size: 28px;
+    }
+    
+    .about-team-video .section-subtitle {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    
+    .video-container {
+        padding: 0 16px;
+    }
+    
+    .video-wrapper {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-team-video .section-title {
+        font-size: 24px;
+    }
+    
+    .video-wrapper {
+        border-radius: 8px;
+    }
+}
+
+/* About the Product Video Section */
+.about-product-video {
+    padding: 80px 0;
+    background: white;
+}
+
+.about-product-video .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.about-product-video .section-title {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.about-product-video .section-subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-product-video .highlight {
+    color: #2563eb;
+}
+
+/* Responsive styles for about-product-video section */
+@media (max-width: 768px) {
+    .about-product-video {
+        padding: 60px 0;
+    }
+    
+    .about-product-video .section-title {
+        font-size: 28px;
+    }
+    
+    .about-product-video .section-subtitle {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-product-video .section-title {
+        font-size: 24px;
+    }
+}
 
